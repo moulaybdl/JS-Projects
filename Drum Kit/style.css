@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "sans";
+  background: #19172e;
+  color: white;
+}
+
+@font-face {
+  src: url("font/sans.ttf");
+  font-family: "sans";
+}
+
+header {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.drum_kit {
+  font-family: "Arvo", cursive;
+  color: #feffe2;
+  font-size: 52px;
+  font-weight: 600;
+  padding: 20px;
+}
+/* ######################################################## */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.box {
+  background-color: #212121;
+  width: 120px;
+  height: 110px;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  cursor: pointer;
+}
+
+.button {
+  background-color: #212121;
+  font-size: 42px;
+}
+
+.sound {
+  color: #bb86fc;
+  font-size: 12px;
+  background-color: #212121;
+  font-weight: 600;
+}
+/* ######################################################## */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 15vh;
+}
+
+#my_name {
+  font-family: "Arvo", cursive;
+  color: greenyellow;
+}
+
+#inspired {
+  font-family: "Arvo", cursive;
+  color: blue;
+}
+
+/* ########################################## */
+.audio_container {
+  position: absolute;
+  background-color: White;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+}
