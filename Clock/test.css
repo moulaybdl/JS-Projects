@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  src: url("font/sans.ttf");
+  font-family: "sans";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #19172e;
+  font-family: "sans";
+
+  flex-direction: column;
+
+  gap: 90px;
+}
+
+.clock {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: grey; */
+
+  background-image: url(assets/clock.png);
+  background-size: cover;
+}
+
+.title {
+  color: white;
+  font-size: 32px;
+}
+
+.center {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 1000;
+}
+
+.sec,
+.hour,
+.min {
+  position: absolute;
+}
+
+.sec,
+.sc {
+  width: 230px;
+  height: 230px;
+  z-index: 50;
+}
+
+.hr,
+.hour {
+  width: 120px;
+  height: 120px;
+}
+
+.mn,
+.min {
+  width: 150px;
+  height: 150px;
+}
+
+.sc,
+.mn,
+.hr {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+
+  position: absolute;
+}
+
+.sc::before {
+  content: "";
+  width: 2px;
+  height: 150px;
+  background: #70efde;
+  z-index: 50;
+  border-radius: 6px 6px 0 0;
+
+  position: absolute;
+}
+
+.hr::before {
+  content: "";
+  width: 6px;
+  height: 60px;
+  background: #bb86fc;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+
+  position: absolute;
+}
+
+.mn::before {
+  content: "";
+  width: 4px;
+  height: 80px;
+  background: #ffffff;
+  z-index: 8;
+  border-radius: 6px 6px 0 0;
+
+  position: absolute;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: white;
+}
+
+#dev {
+  color: greenyellow;
+}
+
+#src {
+  color: #bb86fc;
+}
