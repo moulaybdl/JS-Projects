@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Random Password Generator</div>
+      <div class="main">
+        <div class="password">Password generated</div>
+        <input type="text" class="char-num" value="16" />
+        <div class="param">
+          <div class="lc option">
+            <input type="checkbox" />
+            <p>Lowercase (a-z)</p>
+          </div>
+          <div class="uc option">
+            <input type="checkbox" />
+            <p>Uppercase (A-Z)</p>
+          </div>
+          <div class="symbols option">
+            <input type="checkbox" />
+            <p>Symbols (@-*)</p>
+          </div>
+          <div class="numbers option">
+            <input type="checkbox" />
+            <p>Number (0-9)</p>
+          </div>
+        </div>
+      </div>
+      <div class="generate-btn">Generate password</div>
+    </div>
+    <footer>
+      <p>Developed by <span id="dev">Moulay</span></p>
+      <p>Inspired by <span id="src">swapnil sparsh</span></p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #19172e;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 20px;
+
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  flex-direction: column;
+
+  background: rgba(255, 255, 255, 0.05);
+  width: 400px;
+
+  padding: 25px;
+
+  border-radius: 15px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+}
+
+.option {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+
+  font-size: 14px;
+  color: white;
+  font-weight: 550;
+
+  gap: 9px;
+}
+
+.param {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+
+  align-self: flex-start;
+}
+
+.password {
+  height: 50px;
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font: 550;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.275);
+}
+
+.char-num {
+  height: 50px;
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, 0.09);
+
+  border-radius: 10px;
+
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  color: white;
+  font-weight: 500;
+}
+
+input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+}
+
+.generate-btn {
+  height: 40px;
+  background-color: rgb(55, 55, 55);
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-weight: 550;
+
+  height: 50px;
+}
+
+#dev {
+  color: greenyellow;
+}
+
+#src {
+  color: purple;
+}
+
+span {
+  font-weight: 550;
+}
